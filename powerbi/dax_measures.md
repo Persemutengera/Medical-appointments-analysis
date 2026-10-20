@@ -1,5 +1,5 @@
 ### Attendance rate 
-```Text
+```Dax
 Attendance Rate = 
 DIVIDE(
     [Attended Appointments],
@@ -9,7 +9,7 @@ DIVIDE(
 ```
 
 ### Attended Appointments
-```Text
+```Dax
 Attended Appointments = 
 CALCULATE(
     COUNTROWS('medical_appointments cleaned_medical_appointments'),
@@ -19,7 +19,7 @@ CALCULATE(
 ```
 
 ### No-Show Appointments
-```Text
+```Dax
 No-Show Appointments = 
 CALCULATE(
     COUNTROWS('medical_appointments cleaned_medical_appointments'),
@@ -29,7 +29,7 @@ CALCULATE(
 ```
 
 ### No-Show Rate
-```Text
+```Dax
 No-Show Rate = 
 DIVIDE(
     [No-Show Appointments],
@@ -39,7 +39,7 @@ DIVIDE(
 ```
 
 ### Total Neighbourhoods
-```Text
+```Dax
 Total Neighbourhoods = 
 DISTINCTCOUNT(
     'medical_appointments cleaned_medical_appointments'[Neighbourhood]
@@ -47,7 +47,7 @@ DISTINCTCOUNT(
 ```
 
 ### Total Valid Appointments
-```Text
+```Dax
 Total Valid Appointments = 
 CALCULATE(
     COUNTROWS('medical_appointments cleaned_medical_appointments'),
@@ -56,7 +56,7 @@ CALCULATE(
 ```
 
 ### Unique Patients
-```Text
+```Dax
 Unique Patients = 
 CALCULATE(
     DISTINCTCOUNT('medical_appointments cleaned_medical_appointments'[PatientId]),
