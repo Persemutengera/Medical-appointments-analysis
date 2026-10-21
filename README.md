@@ -187,5 +187,5 @@ medical-appointments-analysis/
 
 ## Author
 
-Perseverance Mutengera
+/**Perseverance Mutengera**\
 Data Analytics Portfolio Project
